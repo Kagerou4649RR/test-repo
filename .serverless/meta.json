@@ -1,0 +1,280 @@
+{
+  "R:\\Github Repositories\\TestRepository for FireBase to Lambda migration\\test-repo\\serverless.yml": {
+    "versionFramework": "4.14.3",
+    "servicePath": "R:\\Github Repositories\\TestRepository for FireBase to Lambda migration\\test-repo\\serverless.yml",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "service": "lambda-multi-functions",
+      "frameworkVersion": ">=4",
+      "provider": {
+        "name": "aws",
+        "runtime": "nodejs18.x",
+        "region": "me-central-1",
+        "timeout": 10,
+        "stage": "dev",
+        "versionFunctions": true,
+        "remoteFunctionData": {
+          "Configuration": {
+            "FunctionName": "lambda-multi-functions-dev-helloWorld",
+            "FunctionArn": "arn:aws:lambda:me-central-1:639487765691:function:lambda-multi-functions-dev-helloWorld",
+            "Runtime": "nodejs18.x",
+            "Role": "arn:aws:iam::639487765691:role/lambda-multi-functions-dev-me-central-1-lambdaRole",
+            "Handler": "scr/helloWorld.handler",
+            "CodeSize": 6979,
+            "Description": "",
+            "Timeout": 10,
+            "MemorySize": 256,
+            "LastModified": "2025-05-16T14:19:07.000+0000",
+            "CodeSha256": "iwYsRIuIFl0sPp9iuBZM20BczkhLA+HMAPlKN+mRqZI=",
+            "Version": "$LATEST",
+            "VpcConfig": {
+              "SubnetIds": [],
+              "SecurityGroupIds": [],
+              "VpcId": "",
+              "Ipv6AllowedForDualStack": false
+            },
+            "KMSKeyArn": null,
+            "TracingConfig": {
+              "Mode": "PassThrough"
+            },
+            "MasterArn": null,
+            "RevisionId": "fec90edf-6c77-4531-ae23-226702461748",
+            "State": "Active",
+            "StateReason": null,
+            "StateReasonCode": null,
+            "LastUpdateStatus": "Successful",
+            "LastUpdateStatusReason": null,
+            "LastUpdateStatusReasonCode": null,
+            "PackageType": "Zip",
+            "SigningProfileVersionArn": null,
+            "SigningJobArn": null,
+            "Architectures": [
+              "x86_64"
+            ],
+            "EphemeralStorage": {
+              "Size": 512
+            },
+            "SnapStart": {
+              "ApplyOn": "None",
+              "OptimizationStatus": "Off"
+            },
+            "RuntimeVersionConfig": {
+              "RuntimeVersionArn": "arn:aws:lambda:me-central-1::runtime:5ab9f87f341aef8dc321668fd30e7a28cd061413c8b91a9a0f18ed7f88874e2f"
+            },
+            "LoggingConfig": {
+              "LogFormat": "Text",
+              "ApplicationLogLevel": null,
+              "SystemLogLevel": null,
+              "LogGroup": "/aws/lambda/lambda-multi-functions-dev-helloWorld"
+            },
+            "Layers": [],
+            "Environment": {
+              "Variables": {}
+            }
+          },
+          "Code": {
+            "RepositoryType": "S3",
+            "Location": "https://prod-dxb-c0-yrsce-tasks.s3.me-central-1.amazonaws.com/snapshots/639487765691/lambda-multi-functions-dev-helloWorld-dbf14f60-ac9b-4ff4-9e84-b7f4ad1a5cd7?versionId=fLyqgGVdUsrxWYD0L2iI.Qi7iGr2Qyrt&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDG1lLWNlbnRyYWwtMSJHMEUCIA5rQosQwLsFBCcwSEr1WLE7%2F2m4iucbLDu54K9IszRqAiEA99OEuc8ElHenNE%2FLGqj2B7HgvAW%2FediS5GUuzTqrHOYqiQIIRBABGgw5NzQ3MDc2MDU4NTMiDM%2BMgbjrOxAsOe8hBSrmAVL18bRwvxadgijOz57Q1LosupzQ5WZiPsmcnIGg4gQq1jz7Dp14FxMeL5xxodEgNP7aZXg3u6%2BM%2FkDHi%2FL6rd0lDZ9Z2jkiV0nQHaMHs7T%2BTxKFEpm7VbFHfp6q5lrwso71lKtNfbv%2BvjP5aMRM8gjoqaxWBsC%2FvLTw%2B9oPpnQVvebWkEDqZpxfmkMGvjlYP9XdRQa5EC90fagzNCYmNhkeTbg3qr4dOkSoxObmGolmXISHokrdOPmXy4yzFwVLnQpvXCEKTEMacVq6Owek8DRpM%2B4uaQ%2BnP44ypnJw4dZYQ2LA7BwBMKionMEGOo8BNObm6h8lMckq2AQ%2FKed%2FkcP%2BwA%2FG0%2Fa81EYjELAcHPbGHw2wIunkzCTYT5%2B%2B4rzHNLaT6IjcfRUYMchOLncqYqowfx6d%2BGaHL4196SS30U4TJobrVWXo1GOz0fjFfjn9Saf6DtPyr7y%2BKX4pXFuBt90feYMvTZX5cdxFFrUUmtuB%2FgFwf9SnwTT%2BQk95KXM%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250516T142653Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA6F4IZYFO6AVMEFTF%2F20250516%2Fme-central-1%2Fs3%2Faws4_request&X-Amz-Signature=7d461a4ece351bb14bc4f95dd5f6969fed55aa68fb4ff531aa318a1f864828f1",
+            "ImageUri": null,
+            "ResolvedImageUri": null
+          },
+          "Tags": {
+            "aws:cloudformation:stack-name": "lambda-multi-functions-dev",
+            "aws:cloudformation:stack-id": "arn:aws:cloudformation:me-central-1:639487765691:stack/lambda-multi-functions-dev/fc0a6660-325e-11f0-814b-066bf1bae4cb",
+            "STAGE": "dev",
+            "aws:cloudformation:logical-id": "HelloWorldLambdaFunction"
+          }
+        }
+      },
+      "functions": {
+        "helloWorld": {
+          "handler": "src/helloWorld.handler",
+          "memorySize": 256,
+          "events": [
+            {
+              "http": {
+                "path": "hello",
+                "method": "get"
+              }
+            }
+          ],
+          "name": "lambda-multi-functions-dev-helloWorld",
+          "environment": {
+            "NODE_OPTIONS": "--enable-source-maps"
+          },
+          "package": {
+            "artifact": "R:\\Github Repositories\\TestRepository for FireBase to Lambda migration\\test-repo\\.serverless\\build\\lambda-multi-functions-helloWorld.zip"
+          }
+        },
+        "greetUser": {
+          "handler": "src/greetUser.handler",
+          "memorySize": 256,
+          "events": [
+            {
+              "http": {
+                "path": "greet",
+                "method": "get"
+              }
+            }
+          ],
+          "name": "lambda-multi-functions-dev-greetUser"
+        },
+        "currentTime": {
+          "handler": "src/currentTime.handler",
+          "memorySize": 256,
+          "events": [
+            {
+              "http": {
+                "path": "time",
+                "method": "get"
+              }
+            }
+          ],
+          "name": "lambda-multi-functions-dev-currentTime"
+        }
+      },
+      "package": {
+        "individually": true,
+        "artifactsS3KeyDirname": "serverless/lambda-multi-functions/dev/code-artifacts"
+      }
+    },
+    "provider": {
+      "name": "aws",
+      "runtime": "nodejs18.x",
+      "region": "me-central-1",
+      "timeout": 10,
+      "stage": "dev",
+      "versionFunctions": true,
+      "remoteFunctionData": {
+        "Configuration": {
+          "FunctionName": "lambda-multi-functions-dev-helloWorld",
+          "FunctionArn": "arn:aws:lambda:me-central-1:639487765691:function:lambda-multi-functions-dev-helloWorld",
+          "Runtime": "nodejs18.x",
+          "Role": "arn:aws:iam::639487765691:role/lambda-multi-functions-dev-me-central-1-lambdaRole",
+          "Handler": "scr/helloWorld.handler",
+          "CodeSize": 6979,
+          "Description": "",
+          "Timeout": 10,
+          "MemorySize": 256,
+          "LastModified": "2025-05-16T14:19:07.000+0000",
+          "CodeSha256": "iwYsRIuIFl0sPp9iuBZM20BczkhLA+HMAPlKN+mRqZI=",
+          "Version": "$LATEST",
+          "VpcConfig": {
+            "SubnetIds": [],
+            "SecurityGroupIds": [],
+            "VpcId": "",
+            "Ipv6AllowedForDualStack": false
+          },
+          "KMSKeyArn": null,
+          "TracingConfig": {
+            "Mode": "PassThrough"
+          },
+          "MasterArn": null,
+          "RevisionId": "fec90edf-6c77-4531-ae23-226702461748",
+          "State": "Active",
+          "StateReason": null,
+          "StateReasonCode": null,
+          "LastUpdateStatus": "Successful",
+          "LastUpdateStatusReason": null,
+          "LastUpdateStatusReasonCode": null,
+          "PackageType": "Zip",
+          "SigningProfileVersionArn": null,
+          "SigningJobArn": null,
+          "Architectures": [
+            "x86_64"
+          ],
+          "EphemeralStorage": {
+            "Size": 512
+          },
+          "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+          },
+          "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:me-central-1::runtime:5ab9f87f341aef8dc321668fd30e7a28cd061413c8b91a9a0f18ed7f88874e2f"
+          },
+          "LoggingConfig": {
+            "LogFormat": "Text",
+            "ApplicationLogLevel": null,
+            "SystemLogLevel": null,
+            "LogGroup": "/aws/lambda/lambda-multi-functions-dev-helloWorld"
+          },
+          "Layers": [],
+          "Environment": {
+            "Variables": {}
+          }
+        },
+        "Code": {
+          "RepositoryType": "S3",
+          "Location": "https://prod-dxb-c0-yrsce-tasks.s3.me-central-1.amazonaws.com/snapshots/639487765691/lambda-multi-functions-dev-helloWorld-dbf14f60-ac9b-4ff4-9e84-b7f4ad1a5cd7?versionId=fLyqgGVdUsrxWYD0L2iI.Qi7iGr2Qyrt&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDG1lLWNlbnRyYWwtMSJHMEUCIA5rQosQwLsFBCcwSEr1WLE7%2F2m4iucbLDu54K9IszRqAiEA99OEuc8ElHenNE%2FLGqj2B7HgvAW%2FediS5GUuzTqrHOYqiQIIRBABGgw5NzQ3MDc2MDU4NTMiDM%2BMgbjrOxAsOe8hBSrmAVL18bRwvxadgijOz57Q1LosupzQ5WZiPsmcnIGg4gQq1jz7Dp14FxMeL5xxodEgNP7aZXg3u6%2BM%2FkDHi%2FL6rd0lDZ9Z2jkiV0nQHaMHs7T%2BTxKFEpm7VbFHfp6q5lrwso71lKtNfbv%2BvjP5aMRM8gjoqaxWBsC%2FvLTw%2B9oPpnQVvebWkEDqZpxfmkMGvjlYP9XdRQa5EC90fagzNCYmNhkeTbg3qr4dOkSoxObmGolmXISHokrdOPmXy4yzFwVLnQpvXCEKTEMacVq6Owek8DRpM%2B4uaQ%2BnP44ypnJw4dZYQ2LA7BwBMKionMEGOo8BNObm6h8lMckq2AQ%2FKed%2FkcP%2BwA%2FG0%2Fa81EYjELAcHPbGHw2wIunkzCTYT5%2B%2B4rzHNLaT6IjcfRUYMchOLncqYqowfx6d%2BGaHL4196SS30U4TJobrVWXo1GOz0fjFfjn9Saf6DtPyr7y%2BKX4pXFuBt90feYMvTZX5cdxFFrUUmtuB%2FgFwf9SnwTT%2BQk95KXM%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250516T142653Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA6F4IZYFO6AVMEFTF%2F20250516%2Fme-central-1%2Fs3%2Faws4_request&X-Amz-Signature=7d461a4ece351bb14bc4f95dd5f6969fed55aa68fb4ff531aa318a1f864828f1",
+          "ImageUri": null,
+          "ResolvedImageUri": null
+        },
+        "Tags": {
+          "aws:cloudformation:stack-name": "lambda-multi-functions-dev",
+          "aws:cloudformation:stack-id": "arn:aws:cloudformation:me-central-1:639487765691:stack/lambda-multi-functions-dev/fc0a6660-325e-11f0-814b-066bf1bae4cb",
+          "STAGE": "dev",
+          "aws:cloudformation:logical-id": "HelloWorldLambdaFunction"
+        }
+      }
+    },
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": false,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "serviceRawFile": "service: lambda-multi-functions\n\nframeworkVersion: '>=4'\n\nprovider:\n  name: aws\n  runtime: nodejs18.x\n  region: me-central-1\n  timeout: 10\n\nfunctions:\n  helloWorld:\n    handler: src/helloWorld.handler\n    memorySize: 256\n    events:\n      - http:\n          path: hello\n          method: get\n\n  greetUser:\n    handler: src/greetUser.handler\n    memorySize: 256\n    events:\n      - http:\n          path: greet\n          method: get\n\n  currentTime:\n    handler: src/currentTime.handler\n    memorySize: 256\n    events:\n      - http:\n          path: time\n          method: get\n\npackage:\n  individually: true\n",
+    "command": [
+      "deploy",
+      "function"
+    ],
+    "options": {
+      "function": "helloWorld"
+    },
+    "orgId": "c2cbd01d-0ce3-4806-8f81-dce28019a06e",
+    "orgName": "kagerouredrocket",
+    "userId": "2n0ZHwJpGt3yMzFSyb",
+    "userName": "kagerouredrocket",
+    "serviceProviderAwsAccountId": "639487765691",
+    "serviceProviderAwsCfStackName": "lambda-multi-functions-dev",
+    "serviceProviderAwsCfStackId": "arn:aws:cloudformation:me-central-1:639487765691:stack/lambda-multi-functions-dev/fc0a6660-325e-11f0-814b-066bf1bae4cb",
+    "serviceProviderAwsCfStackCreated": "2025-05-16T14:06:39.220Z",
+    "serviceProviderAwsCfStackUpdated": "2025-05-16T14:18:55.771Z",
+    "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
+    "serviceProviderAwsCfStackOutputs": [
+      {
+        "OutputKey": "GreetUserLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:me-central-1:639487765691:function:lambda-multi-functions-dev-greetUser:2",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-lambda-multi-functions-dev-GreetUserLambdaFunctionQualifiedArn"
+      },
+      {
+        "OutputKey": "HelloWorldLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:me-central-1:639487765691:function:lambda-multi-functions-dev-helloWorld:2",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-lambda-multi-functions-dev-HelloWorldLambdaFunctionQualifiedArn"
+      },
+      {
+        "OutputKey": "CurrentTimeLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:me-central-1:639487765691:function:lambda-multi-functions-dev-currentTime:2",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-lambda-multi-functions-dev-CurrentTimeLambdaFunctionQualifiedArn"
+      },
+      {
+        "OutputKey": "ServiceEndpoint",
+        "OutputValue": "https://8qopaaqt04.execute-api.me-central-1.amazonaws.com/dev",
+        "Description": "URL of the service endpoint",
+        "ExportName": "sls-lambda-multi-functions-dev-ServiceEndpoint"
+      },
+      {
+        "OutputKey": "ServerlessDeploymentBucketName",
+        "OutputValue": "serverless-framework-deployments-me-central-1-2f6e42a8-c045",
+        "ExportName": "sls-lambda-multi-functions-dev-ServerlessDeploymentBucketName"
+      }
+    ]
+  }
+}

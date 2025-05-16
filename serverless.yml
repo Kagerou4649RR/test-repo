@@ -1,0 +1,37 @@
+service: lambda-multi-functions
+
+frameworkVersion: '>=4'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: me-central-1
+  timeout: 10
+
+functions:
+  helloWorld:
+    handler: src/helloWorld.handler
+    memorySize: 256
+    events:
+      - http:
+          path: hello
+          method: get
+
+  greetUser:
+    handler: src/greetUser.handler
+    memorySize: 256
+    events:
+      - http:
+          path: greet
+          method: get
+
+  currentTime:
+    handler: src/currentTime.handler
+    memorySize: 256
+    events:
+      - http:
+          path: time
+          method: get
+
+package:
+  individually: true
